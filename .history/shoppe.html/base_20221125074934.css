@@ -1,0 +1,94 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --primary-color:#EF4D2D;
+    --border-color:#dbdbdb;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto ', serif;
+    box-sizing: border-box;
+}
+.grid{
+    width:1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width:100%;
+}
+.gird__row{
+    display:flex;
+    flex-wrap: wrap;
+}
+/* animation */
+@keyframes fadeIn{
+0%{
+opacity:0;
+}
+100%{
+opacity:1;
+}
+}
+.modal{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+}
+.modal__overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+    animation:fadeIn 0.1s  linear ;
+}
+@
+.modal__body{
+    /* o cần fix kích thước */
+    /* width:300px;
+    height:300px; */
+    background-color:var(--white-color);
+    border-radius: 2px;
+    margin: auto;
+    z-index: 1;
+}
+/* button style */
+.btn{
+margin-top:50px;
+height:36px;
+min-width:142px;
+border:none;
+border-radius: 2px;;
+font-size: 1.4rem;
+font-weight: 400;
+padding:0 12px;
+line-height:1.4rem ;
+cursor:pointer;
+color:var(--text-color);
+display:flex;
+ justify-content: center;
+align-items: center; 
+text-decoration: none;
+}
+.btn.btn--normal:hover{
+    background-color:rgba(0,0,0,0.5);
+} 
+.auth-form__socials__fb{
+    background-color:#3A5A98;
+    color:var(--white-color);
+}
+.auth-form__socials__google{
+    color:rgb(229, 181, 181);
+    background-color:var(--white-color);
+    
+}
+
+
